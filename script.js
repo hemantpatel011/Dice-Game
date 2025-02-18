@@ -45,27 +45,27 @@ function p1Play() {
 
   switch (dice) {
     case 1: {
-      document.getElementById("p1dice").src = "./images/1.png";
+      document.getElementById("p1dice").src = ".images/1.webp";
       break;
     }
     case 2: {
-      document.getElementById("p1dice").src = "./images/2.png";
+      document.getElementById("p1dice").src = "./images/2.webp";
       break;
     }
     case 3: {
-      document.getElementById("p1dice").src = "./images/3.png";
+      document.getElementById("p1dice").src = "./images/3.webp";
       break;
     }
     case 4: {
-      document.getElementById("p1dice").src = "./images/4.png";
+      document.getElementById("p1dice").src = "./images/4.webp";
       break;
     }
     case 5: {
-      document.getElementById("p1dice").src = "./images/5.png";
+      document.getElementById("p1dice").src = "./images/5.webp";
       break;
     }
     case 6: {
-      document.getElementById("p1dice").src = "./images/6.png";
+      document.getElementById("p1dice").src = "./images/6.webp";
       break;
     }
     default: {
@@ -93,27 +93,27 @@ function p2Play() {
 
   switch (dice) {
     case 1: {
-      document.getElementById("p2dice").src = "./images/1.png";
+      document.getElementById("p2dice").src = "./images/1.webp";
       break;
     }
     case 2: {
-      document.getElementById("p2dice").src = "./images/2.png";
+      document.getElementById("p2dice").src = "./images/2.webp";
       break;
     }
     case 3: {
-      document.getElementById("p2dice").src = "./images/3.png";
+      document.getElementById("p2dice").src = "./images/3.webp";
       break;
     }
     case 4: {
-      document.getElementById("p2dice").src = "./images/4.png";
+      document.getElementById("p2dice").src = "./images/4.webp";
       break;
     }
     case 5: {
-      document.getElementById("p2dice").src = "./images/5.png";
+      document.getElementById("p2dice").src = "./images/5.webp";
       break;
     }
     case 6: {
-      document.getElementById("p2dice").src = "./images/6.png";
+      document.getElementById("p2dice").src = "./images/6.webp";
       break;
     }
     default: {
