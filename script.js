@@ -3,9 +3,11 @@ let s1 = 0,
 
 let sb2 = Number(document.getElementById("p2sc").innerText);
 
+
 function start() {
-  const p1 = document.getElementById("p1").value.trim();
-  const p2 = document.getElementById("p2").value.trim();
+
+ let p1 = document.getElementById("p1").value.trim();
+  let p2 = document.getElementById("p2").value.trim();
 
   if (p1 === "" || p2 === "") {
     alert("Please add the Player Name");
@@ -28,6 +30,11 @@ function restart() {
     location.reload();
   }
 }
+function restartOnWinning() {
+  if (confirm("Enter ok to Restart the Game!!!")) {
+    location.reload();
+  }
+}
 
 function switchPlayer(chance) {
   if (chance === 2) {
@@ -40,32 +47,34 @@ function switchPlayer(chance) {
 }
 
 function p1Play() {
+  let p1 = document.getElementById("p1").value.trim();
+ 
   let dice = Math.floor(Math.random() * 6 + 1);
   s1 = Number(document.getElementById("p1sc").innerText);
 
   switch (dice) {
     case 1: {
-      document.getElementById("p1dice").src = "./images/1.webp";
+      document.getElementById("p1dice").src = "./images/1.jpg";
       break;
     }
     case 2: {
-      document.getElementById("p1dice").src = "./images/2.webp";
+      document.getElementById("p1dice").src = "./images/2.jpg";
       break;
     }
     case 3: {
-      document.getElementById("p1dice").src = "./images/3.webp";
+      document.getElementById("p1dice").src = "./images/3.jpg";
       break;
     }
     case 4: {
-      document.getElementById("p1dice").src = "./images/4.webp";
+      document.getElementById("p1dice").src = "./images/4.jpg";
       break;
     }
     case 5: {
-      document.getElementById("p1dice").src = "./images/5.webp";
+      document.getElementById("p1dice").src = "./images/5.jpg";
       break;
     }
     case 6: {
-      document.getElementById("p1dice").src = "./images/6.webp";
+      document.getElementById("p1dice").src = "./images/6.jpg";
       break;
     }
     default: {
@@ -82,39 +91,42 @@ function p1Play() {
     document.getElementById("p1sc").innerText = s1;
     if (s1 === 50) {
       
-      alert("PLayer 1 Winnner !!! ");
-      restart();
+      alert( p1 +" Winnner !!!");
+      alert("Enter Ok to Restart the game!!! ");
+       location.reload();
     }
   }
 }
 
 function p2Play() {
+ 
+  let p2 = document.getElementById("p2").value.trim();
   let dice = Math.floor(Math.random() * 6 + 1);
   s2 = Number(document.getElementById("p2sc").innerText);
 
   switch (dice) {
     case 1: {
-      document.getElementById("p2dice").src = "./images/1.webp";
+      document.getElementById("p2dice").src = "./images/1.jpg";
       break;
     }
     case 2: {
-      document.getElementById("p2dice").src = "./images/2.webp";
+      document.getElementById("p2dice").src = "./images/2.jpg";
       break;
     }
     case 3: {
-      document.getElementById("p2dice").src = "./images/3.webp";
+      document.getElementById("p2dice").src = "./images/3.jpg";
       break;
     }
     case 4: {
-      document.getElementById("p2dice").src = "./images/4.webp";
+      document.getElementById("p2dice").src = "./images/4.jpg";
       break;
     }
     case 5: {
-      document.getElementById("p2dice").src = "./images/5.webp";
+      document.getElementById("p2dice").src = "./images/5.jpg";
       break;
     }
     case 6: {
-      document.getElementById("p2dice").src = "./images/6.webp";
+      document.getElementById("p2dice").src = "./images/6.jpg";
       break;
     }
     default: {
@@ -130,8 +142,9 @@ function p2Play() {
   } else {
     document.getElementById("p2sc").innerText = s2;
     if (s2 === 50) {
-      alert("Player 2 Winnner !!! ");
-      restart();
+      alert(p2 + " Winnner !!!");
+      alert("Enter Ok to Restart the game!!! ");
+       location.reload(); 
     }
   }
 }
