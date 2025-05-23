@@ -54,27 +54,27 @@ function p1Play() {
 
   switch (dice) {
     case 1: {
-      document.getElementById("p1dice").src = "./images/1.jpg";
+      document.getElementById("p1dice").src = "./assets/Images/1.jpg";
       break;
     }
     case 2: {
-      document.getElementById("p1dice").src = "./images/2.jpg";
+      document.getElementById("p1dice").src = "./assets/Images/2.jpg";
       break;
     }
     case 3: {
-      document.getElementById("p1dice").src = "./images/3.jpg";
+      document.getElementById("p1dice").src = "./assets/Images/3.jpg";
       break;
     }
     case 4: {
-      document.getElementById("p1dice").src = "./images/4.jpg";
+      document.getElementById("p1dice").src = "./assets/Images/4.jpg";
       break;
     }
     case 5: {
-      document.getElementById("p1dice").src = "./images/5.jpg";
+      document.getElementById("p1dice").src = "./assets/Images/5.jpg";
       break;
     }
     case 6: {
-      document.getElementById("p1dice").src = "./images/6.jpg";
+      document.getElementById("p1dice").src = "./assets/Images/6.jpg";
       break;
     }
     default: {
@@ -106,27 +106,27 @@ function p2Play() {
 
   switch (dice) {
     case 1: {
-      document.getElementById("p2dice").src = "./images/1.jpg";
+      document.getElementById("p2dice").src = "./assets/Images/1.jpg";
       break;
     }
     case 2: {
-      document.getElementById("p2dice").src = "./images/2.jpg";
+      document.getElementById("p2dice").src = "./assets/Images/2.jpg";
       break;
     }
     case 3: {
-      document.getElementById("p2dice").src = "./images/3.jpg";
+      document.getElementById("p2dice").src = "./assets/Images/3.jpg";
       break;
     }
     case 4: {
-      document.getElementById("p2dice").src = "./images/4.jpg";
+      document.getElementById("p2dice").src = "./assets/Images/4.jpg";
       break;
     }
     case 5: {
-      document.getElementById("p2dice").src = "./images/5.jpg";
+      document.getElementById("p2dice").src = "./assets/Images/5.jpg";
       break;
     }
     case 6: {
-      document.getElementById("p2dice").src = "./images/6.jpg";
+      document.getElementById("p2dice").src = "./assets/Images/6.jpg";
       break;
     }
     default: {
