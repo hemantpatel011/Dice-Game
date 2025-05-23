@@ -45,7 +45,7 @@ function p1Play() {
 
   switch (dice) {
     case 1: {
-      document.getElementById("p1dice").src = "./mages/1.webp";
+      document.getElementById("p1dice").src = "./images/1.webp";
       break;
     }
     case 2: {
@@ -83,6 +83,7 @@ function p1Play() {
     if (s1 === 50) {
       
       alert("PLayer 1 Winnner !!! ");
+      restart();
     }
   }
 }
@@ -130,6 +131,7 @@ function p2Play() {
     document.getElementById("p2sc").innerText = s2;
     if (s2 === 50) {
       alert("Player 2 Winnner !!! ");
+      restart();
     }
   }
 }
